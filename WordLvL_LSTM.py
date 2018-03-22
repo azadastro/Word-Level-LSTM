@@ -13,17 +13,17 @@ import os
 
 path = "woolfv-waltersickert-00-t.txt"
 
-try: 
-    text = open(path).read().lower()
+try:
+    raw_text = open(path).read().lower()
 except UnicodeDecodeError:
     import codecs
-    text = codecs.open(path, encoding='utf-8').read().lower()
 
-print('corpus length:', len(text))
+    raw_text = codecs.open(path, encoding='utf-8').read().lower()
 
-chars = set(text)
-raw_text=text
-new_text=""
+print('corpus length:', len(raw_text))
+
+chars = set(raw_text)
+new_text = ""
 for i in range(0,len(raw_text)):
     if ord(raw_text[i]) == 32 or ord(raw_text[i]) == ord('\n'):
         new_text += raw_text[i]
