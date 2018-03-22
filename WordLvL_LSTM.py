@@ -17,7 +17,6 @@ try:
     raw_text = open(path).read().lower()
 except UnicodeDecodeError:
     import codecs
-
     raw_text = codecs.open(path, encoding='utf-8').read().lower()
 
 print('corpus length:', len(raw_text))
