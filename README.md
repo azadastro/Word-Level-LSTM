@@ -11,4 +11,4 @@ The implementation is based on the code by <a href="https://github.com/vlraik/wo
 - Python 3
 - NVIDIA GPU + CUDA cuDNN
 - Install Keras and dependencies from https://github.com/fchollet/keras
-- Install Natural Language Toolkit(hhttps://www.nltk.org/)
+- Install Natural Language Toolkit (https://www.nltk.org/)
